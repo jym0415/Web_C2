@@ -10,8 +10,14 @@ setInterval(function(){
 },3000)
 
 
-
-
+$("#trigger").click(function(){
+    $(".popup").removeClass('d-none')
+    $('.modal').removeClass('d-none')
+})
+$(".popup button").click(function(){
+    $(".popup").addClass('d-none')
+    $('.modal').addClass('d-none')
+})
 
 
 
